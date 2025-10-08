@@ -169,6 +169,8 @@ select {
   width: 100%;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
+  background-color: #d2b48c;
+  color: #3A2F32;
 }
 
 input[type="email"]:focus,
@@ -226,7 +228,7 @@ th {
 }
 
 ul li:hover {
-  background-color: #F4ACB7;
+  background-color: #ffffff00;
   color: #3A2F32;
   cursor: pointer;
   padding-left: 5px;
@@ -279,7 +281,8 @@ article {
 
 form[name="subscription"] {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
   max-width: 85%;
   margin: 20px auto;
@@ -298,9 +301,46 @@ form[name="subscription"]:hover {
 form[name="subscription"] label {
   flex-shrink: 0;
   margin-left: 10px;
+  color: #3A1F00;
+  font-weight: bold;
 }
 
 form[name="subscription"] input[type="email"] {
-  flex-grow: 1;
-  max-width: 75%;
+  width: 100%;
+  background-color: #ffebee;
+}
+
+form[name="subscription"] button {
+  align-self: flex-start;
+}
+
+form[name="contact"] {
+  max-width: 50%;
+  margin: 20px auto;
+}
+
+form[name="contact"] label {
+  color: #3A1F00;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form[name="contact"] label.name-label {
+  display: block;
+    display: inline-block;   /* Allows setting width */
+  width: 150px;            /* Same width for all labels */
+  text-align: left;       /* Right-align text so inputs line up */
+  margin-right: 5px;      /* Space between label and input */
+  vertical-align: middle;  /* Aligns labels with input fields */
+}
+
+form[name="contact"] input,
+form[name="contact"] select,
+form[name="contact"] textarea {
+  width: 100%;
+  background-color: #ffebee;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #3A2F32;
+  margin-bottom: 1rem;
 }
