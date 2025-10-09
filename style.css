@@ -13,16 +13,20 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
   background-color: #FFE5D9;
   text-align: center;
-  padding: 30px 0;
+  padding: 5px 0;
+  z-index: 3000;
+  border-bottom: 4px solid #9D8189;
 }
 
 header h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: #3A2F32;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 nav.site-nav, header nav {
@@ -123,11 +127,12 @@ img {
 }
 
 .sidebar {
-  flex: 1;
+  flex: 1;                       
   background-color: #FFE5D9;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  align-self: flex-start;         
 }
 
 button {
@@ -180,6 +185,53 @@ select:focus {
   border-color: #9D8189;
   box-shadow: 0 0 5px #9D8189;
   outline: none;
+}
+
+.flex-form {
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 1rem;             
+  max-width: 800px;      
+  margin: 20px auto;
+}
+
+.flex-form .field {
+  flex: 1 1 45%;        
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-form .field.full-width {
+  flex: 1 1 100%;       
+}
+
+.flex-form input,
+.flex-form select,
+.flex-form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #3A2F32;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffebee;
+}
+
+.flex-form button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #9D8189;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flex-form button:hover {
+  background-color: #F4ACB7;
+  color: #3A2F32;
+  transform: scale(1.05);
 }
 
 footer {
@@ -328,11 +380,11 @@ form[name="contact"] label {
 
 form[name="contact"] label.name-label {
   display: block;
-    display: inline-block;   /* Allows setting width */
-  width: 150px;            /* Same width for all labels */
-  text-align: left;       /* Right-align text so inputs line up */
-  margin-right: 5px;      /* Space between label and input */
-  vertical-align: middle;  /* Aligns labels with input fields */
+    display: inline-block;   
+  width: 150px;            
+  text-align: left;      
+  margin-right: 5px;      
+  vertical-align: middle; 
 }
 
 form[name="contact"] input,
@@ -344,4 +396,23 @@ form[name="contact"] textarea {
   border-radius: 5px;
   border: 1px solid #3A2F32;
   margin-bottom: 1rem;
+}
+.container.two-col {
+  display: flex;          
+  gap: 2rem;              
+  margin: 2rem auto;      
+  max-width: 1200px;      
+  padding: 0 1rem;        
+}
+
+.content {
+  flex: 3;               
+}
+
+.sidebar {
+  flex: 1;                
+  background-color: #FFE5D9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
