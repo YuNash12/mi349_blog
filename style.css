@@ -18,12 +18,12 @@ header {
   background-color: #FFE5D9;
   text-align: center;
   padding: 5px 0;
-  z-index: 3000;
+  z-index: 1000;
   border-bottom: 4px solid #9D8189;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #3A2F32;
   font-weight: bold;
   margin-bottom: 1px;
@@ -132,7 +132,8 @@ img {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  align-self: flex-start;         
+  margin-top: 150px;
+  height: fit-content;
 }
 
 button {
@@ -409,10 +410,4 @@ form[name="contact"] textarea {
   flex: 3;               
 }
 
-.sidebar {
-  flex: 1;                
-  background-color: #FFE5D9;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+
