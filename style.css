@@ -17,7 +17,7 @@ header {
   top: 0;
   background-color: #FFE5D9;
   text-align: center;
-  padding: 5px 0;
+  padding: 2px 0 !important;
   z-index: 1000;
   border-bottom: 4px solid #9D8189;
 }
@@ -369,7 +369,7 @@ form[name="subscription"] button {
 }
 
 form[name="contact"] {
-  max-width: 50%;
+  max-width: 80%;
   margin: 20px auto;
 }
 
@@ -397,6 +397,7 @@ form[name="contact"] textarea {
   border-radius: 5px;
   border: 1px solid #3A2F32;
   margin-bottom: 1rem;
+  height: 5rem;
 }
 .container.two-col {
   display: flex;          
