@@ -79,17 +79,6 @@ nav.site-nav a:focus, header nav a:focus {
   outline: none;
 }
 
-@media (max-width: 600px) {
-  nav.site-nav ul, header nav ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-  nav.site-nav a, header nav a {
-    padding: 8px 20px;
-  }
-}
-
 h2 {
   color: #3A2F32;
   font-size: 2rem;
@@ -321,7 +310,7 @@ main img {
   border-radius: 15px;
   display: block;
   margin: 15px auto;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -452,6 +441,31 @@ main {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  nav.site-nav ul, header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav.site-nav a, header nav a {
+    padding: 8px 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem; 
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 8px 15px; 
+  }
+}
+
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -462,4 +476,17 @@ main {
     width: 100%;
     margin-top: 1rem;
   }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p, li {
+    font-size: 1.05rem;
+  }
+
+  article {
+    padding: 12px;
+  }
 }
+
